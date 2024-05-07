@@ -1,0 +1,19 @@
+@import "footer-copyright";
+
+.ar{
+
+footer {
+  .footer-copyright {
+    .social-media {
+      a {
+        &:first-child {
+         /*  padding-left: 0; */
+          padding-right: 0 !important;
+        }
+      }
+    }
+}
+
+} 
+}
+

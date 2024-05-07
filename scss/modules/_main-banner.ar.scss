@@ -1,0 +1,107 @@
+@import "main-banner";
+
+.ar {
+    .main-banner {
+        .banner-slide {
+            .owl-dots {
+                right: 5%;
+            }
+            .item-slide {
+                justify-content: flex-end;
+                .img-slider {
+                    width: 80%;
+                }
+                .overlay {
+                    background-position: right top, center bottom;
+                    position: absolute;
+                    left: right;
+                    background: linear-gradient(-45deg, rgba(36, 82, 122, 1) 40%, rgba(36, 82, 122, 0) 100%);
+                    &::before {
+                       
+                        background-position: left center;
+                       
+                        left: 20%;
+                      
+                        top: 23%;
+                    }
+                    &::after {
+                    
+                        background-position: left center;
+                      
+                        height: 100%;
+                   
+                        left: unset;
+                        right: 0;
+                     
+                    }
+                }
+                .content-wrapper {
+                    right: 75px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .main-banner {
+        .banner-slide {
+            .item-slide {
+                .content-wrapper {
+                    right: 60px;
+                   
+                   
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .main-banner {
+        .banner-slide {
+            .item-slide {
+                .overlay {
+                    &::before {
+                        content: "";
+                        display: none;
+                    }
+                    &::after {
+                        content: "";
+                        top: -3px;
+                    }
+                }
+                .content-wrapper {
+                    left: 47px;
+                   
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 580px) {
+    .main-banner {
+        .banner-slide {
+            .item-slide {
+                .content-wrapper {
+                    right: 33px;
+                  
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 325px) {
+    .main-banner {
+        .banner-slide {
+            .item-slide {
+                .content-wrapper {
+                    right: 28px;
+                   
+                }
+            }
+        }
+    }
+}
