@@ -4729,7 +4729,6 @@ overflow: hidden; */ }
         color: #5f5f5f; }
     .experties-sec .vision-wrap .core-values-item,
     .experties-sec .core-values-wrap .core-values-item {
-      max-width: 695px;
       margin: auto; }
       .experties-sec .vision-wrap .core-values-item .value-box,
       .experties-sec .core-values-wrap .core-values-item .value-box {
