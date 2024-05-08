@@ -255,6 +255,72 @@ min-height: 200px;
 overflow: hidden; */
 }
 
+
+.main-hero {
+    position: relative;
+    background-image: url("../../images/hero.jpg");
+    background-size: cover; /* تغيير حجم الصورة لتغطية العرض بالكامل */
+    background-position: center; /* تحديد موضع بداية الصورة */
+
+
+
+}
+
+.main-hero .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* لون الظل المظلم مع الشفافية */
+    z-index: 1; /* ضع الظل أمام النص والصورة */
+}
+
+.main-hero .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* ضع النص فوق الظل */
+    padding: 0 20px; /* إضافة هامش للنص لتحسين الوضوح */
+}
+
+.main-hero .content-wrapper {
+    margin-bottom: 20px; /* تباعد بين النص والزر */
+}
+
+.main-hero .text-bg-light {
+    background-color: rgba(255, 255, 255, 0.8); /* لون خلفية النص */
+    padding: 20px;
+    border-radius: 10px; /* إضافة حواف مستديرة للخلفية */
+}
+
+.main-hero .text-bg-light p {
+    margin-bottom: 10px; 
+}
+
+.main-hero .action-wrapper {
+    margin-top: 20px; /* تباعد بين النص والزر */
+}
+
+
+
+
+// .main-hero{
+
+//     .hero{
+//       background-image: url("../../images/hero.jpg");
+  
+//       .hero-overlay {
+//           content: "";
+//           top: 0;
+//           right: 0;
+//           left: 0;
+//           bottom: 0;
+//         z-index: 1; /* ضع الغطاء أمام الصورة الخلفية */
+//         // background-color: black;
+//         opacity: 0.70;
+//       }
+//     }
+//   }
+    
+
 @media screen and (max-width: 1399px) {
     .main-banner {
         .banner-slide {
