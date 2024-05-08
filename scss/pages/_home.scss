@@ -21,8 +21,7 @@
     position: relative;
     padding: 80px 0;
 
-    .confernces-sec
- {
+    .crafting-sec {
       display: flex;
       justify-content: space-between;
       .event-card {
@@ -68,17 +67,17 @@
           .top-wrapper {
             h3 {
               font-weight: 700;
-              font-size: 20px;
-              /*   margin-bottom: 10px; */
-              line-height: 32.7px;
+              font-size: 27px;
+              margin-bottom: 10px;
+              line-height: 41.6px;
               a {
-                color: $off-white;
+                color: white;
                 position: relative;
               }
             }
             .dis {
-              margin: 20px 0 60px;
-              min-height: 72px;
+              // margin: 20px 0 60px;
+              // min-height: 72px;
               -webkit-box-orient: vertical;
               display: block;
               display: -webkit-box;
@@ -98,38 +97,23 @@
             .link-action {
               display: none;
               color: white;
-              i {
-                font-size: 16px;
-                padding: 0 10px;
+              .icon-box {
+                width: 55px;
+                height: 55px;
+                background: white;
+                img {
+                  width: 70% !important;
+                }
               }
             }
           }
         }
-        span {
-          background: #a3c891;
-          position: absolute;
-          top: 0%;
-          height: 107px;
-          text-align: center;
-          padding: 10px;
-          color: white;
-          left: 70%;
-          z-index: 1111111;
-          width: 74px;
-          font-size: 18px;
-          border-bottom-left-radius: 5px;
-          border-bottom-right-radius: 5px;
-          transform: translateX(25%);
-          hr {
-            margin: 0;
-          }
-        }
+
         img {
           width: 100%;
           height: 1171px;
         }
         &:hover {
-          // transition-duration: 0.9s;
           .content {
             background: linear-gradient(0deg, rgba(0, 77, 113, 0.8) 0%, rgba(0, 77, 113, 0.8) 100%);
             // animation: fadeIn 200ms;
@@ -159,72 +143,67 @@
         }
       }
     }
-  }
-  // outsourcing-se
-  .outsourcing-sec {
-    .card {
-      padding: 50px 35px;
-      color: $pure-white;
-      background-color: $brand-blue;
-      .card-body {
-        padding: 5rem 0;
+    // outsourcing-se
+    .outsourcing-sec {
+      .card {
+        padding: 50px 35px;
+        color: $pure-white;
+        background-color: $brand-blue;
+        .card-body {
+          padding: 5rem 0;
+        }
+        p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        .card-title {
+          font-size: 52px;
+          margin-bottom: 1.2rem;
+        }
       }
-      p {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-      }
-      .card-title {
-        font-size: 52px;
-        margin-bottom: 1.2rem;
+    }
+
+    .software-specific {
+      .card {
+        background: $brand-primary;
+        padding: 80px 35px;
+        color: $pure-white;
+        .card-body {
+          h5 {
+            font-size: 28px;
+          }
+          .icon-box {
+            width: 72px;
+            height: 72px;
+          }
+        }
+
+        //   .icon-box {
+        //     width: 90px;
+        //     height: 90px;
+        //     background: $brand-blue;
+        //     text-align: center;
+        //     justify-content: center;
+        //     display: flex;
+        //     align-items: center;
+        //     margin:25px 0;
+        //     padding:  15px;
+
+        //     img{
+
+        //       width: 70%;
+        //     }
+        // }
       }
     }
   }
-
-
-  .software-specific {
-    .card {
-      background: $brand-primary;
-      padding: 80px 35px;
-      color: $pure-white;
-      .card-body{
-        h5{
-          font-size: 28px;
-        }
-        .icon-box{
-          width: 72px;
-          height: 72px;
-      
-        }
-      }
-
-      //   .icon-box {
-      //     width: 90px;
-      //     height: 90px;
-      //     background: $brand-blue;
-      //     text-align: center;
-      //     justify-content: center;
-      //     display: flex;
-      //     align-items: center;
-      //     margin:25px 0;
-      //     padding:  15px;
-
-      //     img{
-
-      //       width: 70%;
-      //     }
-      // }
-    }
-  }
-
-
 }
-
 
 @media screen and (max-width: 769px) {
   /*start event-section  */
   .event-section {
-    .confernces-sec {
+    .crafting-sec {
       .event-card {
         a {
           font-size: 18px;
@@ -236,14 +215,12 @@
       right: -65px !important;
     }
   }
-
-
 }
 
 @media screen and (max-width: 580px) {
   /*start event-section  */
   .event-section {
-    .confernces-sec {
+    .crafting-sec {
       .event-card {
         a {
           font-size: 14px !important;
@@ -268,9 +245,4 @@
       bottom: -20% !important;
     }
   }
-
-
-
- 
 }
-

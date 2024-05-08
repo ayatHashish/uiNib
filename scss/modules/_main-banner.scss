@@ -1,4 +1,4 @@
-.main-banner{
+.main-banner {
     padding-top: 0;
     .banner-slide {
         background-color: $pure-white;
@@ -18,14 +18,12 @@
                     border-radius: 10px;
                     width: 36px;
                 }
-                
-                
             }
             .owl-dot {
-                    &:hover{
+                &:hover {
                     background: #a3c891 !important;
                 }
-                }
+            }
         }
         .item-slide {
             position: relative;
@@ -39,7 +37,9 @@
                 }
             }
             .overlay {
-                background-position: left top, center bottom;
+                background-position:
+                    left top,
+                    center bottom;
                 background-repeat: no-repeat, no-repeat;
                 position: absolute;
                 width: 100%;
@@ -255,77 +255,64 @@ min-height: 200px;
 overflow: hidden; */
 }
 
-
 .main-hero {
     position: relative;
-    background-image: url("../../images/hero.jpg");
-    background-size: cover; /* تغيير حجم الصورة لتغطية العرض بالكامل */
-    background-position: center; /* تحديد موضع بداية الصورة */
+    background-image: url("./../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
 
+    .hero-content {
+        position: absolute;
+        text-align: center;
+        z-index: 2;  
+        padding: 0 20px; 
+        .up-content-wrapper {
+            align-items: baseline;
+            justify-content: end;
+            padding: 3% 2% 0 0;
 
+              top: 44px; 
+            p {
+                max-width: 610px;
+            }
+            .action-wrapper {
+                margin-top: 20px; 
+                .icon-box {
+                    width: 72px !important;
+                    height: 72px !important;
+                    background: $brand-primary !important;
 
+                    img {
+                        width: 70% !important;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .content-wrapper {
+            padding: 30% 0 0 0;
+          
+            margin-bottom: 20px;
+            font-size: 80px;
+
+            .hero-span {
+                color:  #319CE9;
+                ;
+            }
+        }
+    }
+
+    .hero-overlay {
+        background-color: rgba(0, 0, 0, 0.6); /* لون الظل المظلم مع الشفافية */
+        z-index: 1; /* ضع الظل أمام النص والصورة */
+    }
 }
 
-.main-hero .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.6); /* لون الظل المظلم مع الشفافية */
-    z-index: 1; /* ضع الظل أمام النص والصورة */
-}
-
-.main-hero .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2; /* ضع النص فوق الظل */
-    padding: 0 20px; /* إضافة هامش للنص لتحسين الوضوح */
-}
-
-.main-hero .content-wrapper {
-    margin-bottom: 20px; /* تباعد بين النص والزر */
-}
-
-.main-hero .text-bg-light {
-    background-color: rgba(255, 255, 255, 0.8); /* لون خلفية النص */
-    padding: 20px;
-    border-radius: 10px; /* إضافة حواف مستديرة للخلفية */
-}
-
-.main-hero .text-bg-light p {
-    margin-bottom: 10px; 
-}
-
-.main-hero .action-wrapper {
-    margin-top: 20px; /* تباعد بين النص والزر */
-}
-
-
-
-
-// .main-hero{
-
-//     .hero{
-//       background-image: url("../../images/hero.jpg");
-  
-//       .hero-overlay {
-//           content: "";
-//           top: 0;
-//           right: 0;
-//           left: 0;
-//           bottom: 0;
-//         z-index: 1; /* ضع الغطاء أمام الصورة الخلفية */
-//         // background-color: black;
-//         opacity: 0.70;
-//       }
-//     }
-//   }
-    
 
 @media screen and (max-width: 1399px) {
     .main-banner {
         .banner-slide {
             .item-slide {
-               
                 .content-wrapper {
                     left: 60px;
                     top: 198px;
@@ -341,7 +328,6 @@ overflow: hidden; */
     .main-banner {
         .banner-slide {
             .item-slide {
-              
                 .content-wrapper {
                     top: 135px;
                     font-size: 40px;
@@ -356,7 +342,6 @@ overflow: hidden; */
         .banner-slide {
             .item-slide {
                 .overlay {
-                 
                     &::before {
                         content: "";
                         display: none;
@@ -364,7 +349,6 @@ overflow: hidden; */
                     &::after {
                         content: "";
                         top: -3px;
-
                     }
                 }
                 .content-wrapper {
@@ -382,8 +366,6 @@ overflow: hidden; */
         .banner-slide {
             .item-slide {
                 .overlay {
-                 
-                 
                     &::after {
                         content: "";
                         display: none;
@@ -403,13 +385,11 @@ overflow: hidden; */
     .main-banner {
         .banner-slide {
             .item-slide {
-                
                 .content-wrapper {
                     left: 28px;
                     top: 33px;
                     font-weight: 200;
                     font-size: 15px;
-                
                 }
             }
         }

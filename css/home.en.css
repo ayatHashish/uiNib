@@ -4077,25 +4077,6 @@ a {
   text-decoration: none;
   color: white; }
 
-.container-fluid {
-  max-width: calc(100% - 65px);
-  padding: 0; }
-
-.btn-action,
-.btn-action-sm,
-.btn-action-sm-1 {
-  height: 40px;
-  border-radius: 6px;
-  padding: 0 30px;
-  width: 201px; }
-
-.btn-action-sm {
-  width: 137px; }
-
-.btn-action-sm-1 {
-  width: 125px;
-  padding: 10px 30px; }
-
 .title-wrapper {
   font-size: 50px;
   font-weight: 600;
@@ -4400,46 +4381,41 @@ overflow: hidden; */ }
 
 .main-hero {
   position: relative;
-  background-image: url("../../images/hero.jpg");
+  background-image: url("./../images/hero.jpg");
   background-size: cover;
-  /* تغيير حجم الصورة لتغطية العرض بالكامل */
-  background-position: center;
-  /* تحديد موضع بداية الصورة */ }
-
-.main-hero .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  /* لون الظل المظلم مع الشفافية */
-  z-index: 1;
-  /* ضع الظل أمام النص والصورة */ }
-
-.main-hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 2;
-  /* ضع النص فوق الظل */
-  padding: 0 20px;
-  /* إضافة هامش للنص لتحسين الوضوح */ }
-
-.main-hero .content-wrapper {
-  margin-bottom: 20px;
-  /* تباعد بين النص والزر */ }
-
-.main-hero .text-bg-light {
-  background-color: rgba(255, 255, 255, 0.8);
-  /* لون خلفية النص */
-  padding: 20px;
-  border-radius: 10px;
-  /* إضافة حواف مستديرة للخلفية */ }
-
-.main-hero .text-bg-light p {
-  margin-bottom: 10px; }
-
-.main-hero .action-wrapper {
-  margin-top: 20px;
-  /* تباعد بين النص والزر */ }
+  background-position: center; }
+  .main-hero .hero-content {
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px; }
+    .main-hero .hero-content .up-content-wrapper {
+      align-items: baseline;
+      justify-content: end;
+      padding: 3% 2% 0 0;
+      top: 44px; }
+      .main-hero .hero-content .up-content-wrapper p {
+        max-width: 610px; }
+      .main-hero .hero-content .up-content-wrapper .action-wrapper {
+        margin-top: 20px; }
+        .main-hero .hero-content .up-content-wrapper .action-wrapper .icon-box {
+          width: 72px !important;
+          height: 72px !important;
+          background: #0c254e !important; }
+          .main-hero .hero-content .up-content-wrapper .action-wrapper .icon-box img {
+            width: 70% !important;
+            color: white; }
+    .main-hero .hero-content .content-wrapper {
+      padding: 30% 0 0 0;
+      margin-bottom: 20px;
+      font-size: 80px; }
+      .main-hero .hero-content .content-wrapper .hero-span {
+        color: #319CE9; }
+  .main-hero .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* لون الظل المظلم مع الشفافية */
+    z-index: 1;
+    /* ضع الظل أمام النص والصورة */ }
 
 @media screen and (max-width: 1399px) {
   .main-banner .banner-slide .item-slide .content-wrapper {
@@ -4524,5 +4500,3 @@ overflow: hidden; */ }
   opacity: 0;
   transition: all 0.3s ease-out;
   display: none; }
-
-/*# sourceMappingURL=home.en.css.map */

@@ -56,32 +56,11 @@ a {
   color: white;
 }
 
-.container-fluid {
-  max-width: calc(100% - 65px);
-  padding: 0;
-}
-.btn-action,
-.btn-action-sm,
-.btn-action-sm-1 {
-  height: 40px;
-  border-radius: 6px;
-   padding:0 30px; 
-  // background-color: $green;
-  // border: $green;
-  // color: $pure-white;
-  width: 201px;
-  &:hover {
-    // background-color: $black;
-    // color: $pure-white;
-  }
-}
-.btn-action-sm {
-  width: 137px;
-}
- .btn-action-sm-1 {
-  width: 125px;
-  padding: 10px 30px;
-} 
+// .container-fluid {
+//   max-width: calc(100% - 65px);
+//   padding: 0;
+// }
+
 .title-wrapper {
   // padding: 75px 0 50px 0;
   font-size: 50px;

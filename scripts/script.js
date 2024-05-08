@@ -47,7 +47,7 @@ $(document).ready(function () {
             autoplay: true,
             slideBy: 1,
         })
-        $('.confernces-sec').owlCarousel({
+        $('.crafting-sec').owlCarousel({
             loop: true,
             nav: true,
             margin: 50,
@@ -65,7 +65,7 @@ $(document).ready(function () {
             responsive: {
                 1200: { items: 3 },
                 900: { items: 2 },
-                700: { items: 2 },
+                700: { items: 1 },
                 0: { items: 1 }
             }
         })
@@ -129,7 +129,7 @@ $(document).ready(function () {
             autoplay: true,
             slideBy: 1,
         });
-        $('.confernces-sec').owlCarousel({
+        $('.crafting-sec').owlCarousel({
             rtl: true,
             loop: true,
             nav: true,
@@ -149,7 +149,7 @@ $(document).ready(function () {
             responsive: {
                 1200: { items: 3 },
                 900: { items: 2 },
-                700: { items: 2 },
+                700: { items: 1 },
                 0: { items: 1 }
             }
 
