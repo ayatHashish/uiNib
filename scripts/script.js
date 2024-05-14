@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
   
+
      setTimeout(function () {
         $('body').addClass('loaded');
         AOS.init({
@@ -12,29 +13,6 @@ $(document).ready(function () {
         });
 
      }, 1500);
-    //   loader();
-    
-        //   function loader(_success) {
-        //     var obj = document.querySelector('.loader'),
-        //     inner = document.querySelector('.preloader_inner'),
-        //     page = document.querySelector('body');
-        //     obj.classList.add('show');
-        //     page.classList.remove('show');
-        //     var w = 0,
-        //         t = setInterval(function() {
-        //             w = w + 1;
-        //             inner.textContent = w+'%';
-        //             if (w === 100){
-        //                 obj.classList.remove('show');
-        //                 page.classList.add('show');
-        //                 clearInterval(t);
-        //                 w = 0;
-        //                 if (_success){
-        //                     return _success();
-        //                 }
-        //             }
-        //         }, 30);
-        // }
 
     if (document.documentElement.lang == 'en') {
         $('.banner-slide').owlCarousel({
@@ -55,7 +33,7 @@ $(document).ready(function () {
             dots: true,
             slideSpeed: 10000,
             autoplaySpeed: 800,
-            autoplayTimeout: 10000,
+            autoplayTimeout: 5000,
             autoplay: true,
             navText: [
                 '<i class="fi-circle-arrow-left1"></i>',
@@ -65,154 +43,27 @@ $(document).ready(function () {
             responsive: {
                 1200: { items: 3 },
                 900: { items: 2 },
-                700: { items: 1 },
-                0: { items: 1 }
-            }
-        })
-        $('.outsourcing-sec').owlCarousel({
-            loop: true,
-            nav: true,
-            margin: 50,
-            items: 3,
-            dots: true,
-            slideSpeed: 10000,
-            autoplaySpeed: 800,
-            autoplayTimeout: 10000,
-            autoplay: true,
-            navText: [
-                '<i class="fi-circle-arrow-left1"></i>',
-                '<i class="fi-circle-arrow-right1"></i>'
-            ],
-            responsiveClass: true,
-            responsive: {
-                1200: { items: 1 },
-                900: { items: 1 },
-                700: { items: 1 },
-                0: { items: 1 }
-            }
-        })
+                700: { 
+                    items: 1 ,
+                    center: true 
 
 
-        $('.software-specific').owlCarousel({
-            loop: true,
-            nav: true,
-            margin: 50,
-            items: 3,
-            dots: true,
-            slideSpeed: 10000,
-            autoplaySpeed: 800,
-            autoplayTimeout: 10000,
-            autoplay: true,
-            navText: [
-                '<i class="fi-circle-arrow-left1"></i>',
-                '<i class="fi-circle-arrow-right1"></i>'
-            ],
-            responsiveClass: true,
-            responsive: {
-                1200: { items: 2 },
-                900: { items: 2 },
-                700: { items: 1 },
-                0: { items: 1}
-            }
-        })
 
-    } else {
-
-        $('.banner-slide').owlCarousel({
-            rtl: true,
-            loop: true,
-            items: 1,
-            dots: true,
-            slideSpeed: 10000,
-            autoplaySpeed: 800,
-            autoplayTimeout: 10000,
-            autoplay: true,
-            slideBy: 1,
-        });
-        $('.crafting-sec').owlCarousel({
-            rtl: true,
-            loop: true,
-            nav: true,
-            margin: 50,
-            items: 3,
-            dots: true,
-            slideSpeed: 10000,
-            autoplaySpeed: 800,
-            autoplayTimeout: 10000,
-            autoplay: true,
-            navText: [
-               
-                '<i class="fi-circle-arrow-right1"></i>', 
-                '<i class="fi-circle-arrow-left1"></i>'
-            ],
-            responsiveClass: true,
-            responsive: {
-                1200: { items: 3 },
-                900: { items: 2 },
-                700: { items: 1 },
-                0: { items: 1 }
-            }
-
-        })
-
-        $('.outsourcing-sec').owlCarousel({
-            rtl: true,
-            loop: true,
-            nav: true,
-            margin: 50,
-            items: 3,
-            dots: true,
-            slideSpeed: 10000,
-            autoplaySpeed: 800,
-            autoplayTimeout: 10000,
-            autoplay: true,
-            navText: [
-                '<i class="fi-circle-arrow-right1"></i>', 
-                '<i class="fi-circle-arrow-left1"></i>'
-            ],
-            responsiveClass: true,
-            responsive: {
-                1200: { items: 1 },
-                900: { items: 1 },
-                700: { items: 1 },
-                0: { items: 1 }
-            }
-        })
-
-
-        $('.software-specific').owlCarousel({
-            loop: true,
-            nav: true,
-            margin: 50,
-            items: 3,
-            dots: true,
-            slideSpeed: 10000,
-            autoplaySpeed: 800,
-            autoplayTimeout: 10000,
-            autoplay: true,
-            navText: [
-                '<i class="fi-circle-arrow-left1"></i>',
-                '<i class="fi-circle-arrow-right1"></i>'
-            ],
-            responsiveClass: true,
-            responsive: {
-                1200: { items: 2 },
-                900: { items: 2 },
-                700: { items: 2 },
-                0: { items: 2}
+                },
+                0: { items: 1 , center: true  }
             }
         })
 
     }
-
      });  
 
 
- let btn = document.querySelector(".burger-mune")
-    let nav = document.querySelector(".editnav")
-    let close = document.querySelector(".editnav .close")
-
-    btn.addEventListener("click", function () {
-        nav.classList.toggle("trans")
-    })
-    close.addEventListener("click", function () { nav.classList.toggle("trans") })
+     tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }

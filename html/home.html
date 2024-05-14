@@ -5,71 +5,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  
+    <link rel="stylesheet" href="../css/inner.en.css" />
     <link rel="stylesheet" href="../css/inner.en.css" />
 
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+
     <title>Home</title>
 </head>
 
-<body class="en">
+<body class="ar" dir="rtl">
 
 
-    <div class="loader-wrapper">
-        <!-- <div class="loader">
-            <div class="preloader_inner">0</div>
+    <!-- <div class="loader-wrapper">
+        <div class="loader"> -->
+    <!-- <div class="preloader_inner">0</div>
         </div>
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div> -->
-    </div>
+    <!-- </div> -->
     <!-- header -->
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-            <div class="container d-flex justify-content-between">
-                <div>
-                    <a class="navbar-brand" href="#">
-                        <img src="../images/logoNAv.png" alt="" style="width: 200px;">
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Service</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Engagement</a>
-                        </li>
+        <nav class="fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/0 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b border-[--ui-light-border-color] border-x dark:border-[--ui-dark-border-color] backdrop-blur-2xl">
+            <div class="max-w-6xl px-6 m-auto 2xl:px-0">   
+                
+                <button aria-label="Search" class="relative transition duration-300 border rounded-full border-gray-950/30 dark:border-white/20 size-9 active:scale-95">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 9a1 1 0 011-1h1a4 4 0 10-2 0H8a1 1 0 011 1z" clip-rule="evenodd" />
+                </svg>
+            </button>
+                <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
+                    <div class="flex items-center justify-between w-full lg:w-auto">
+                        <a >
+                            <img src="../../images/footer-logo.png" alt="">
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
+                        </a>
+                        <div class="flex lg:hidden">
+                            <button aria-label="humburger" id="menu" class="relative transition duration-300 border rounded-full bordeer-gray-950/30 dark:border-white/20 size-9 active:scale-95">
+                                <div aria-hidden="true" id="line1" class="m-auto h-[1.5px] w-4 rounded bg-gray-900 transition duration-300 dark:bg-gray-300"></div>
+                                <div aria-hidden="true" id="line2" class="m-auto mt-1.5 h-[1.5px] w-4 rounded bg-gray-900 transition duration-300 dark:bg-gray-300"></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex-wrap items-center justify-end w-full h-0 space-y-8 lg:w-fit lg:space-y-0 lg:flex lg:h-fit md:flex-nowrap">
+                        <div class="mt-6 text-gray-600 dark:text-gray-300 md:-ml-4 lg:pr-4 lg:mt-0">
+                            <ul class="space-y-6 text-base tracking-wide lg:text-sm lg:flex lg:space-y-0">
+                                <li>
+                                    <a href="#" class="block transition md:px-4 hover:text-primary-600 dark:hover:text-primary-400">
+                                        <span>Product</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block transition md:px-4 hover:text-primary-600 dark:hover:text-primary-400">
+                                        <span>Playground</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block transition md:px-4 hover:text-primary-600 dark:hover:text-primary-400">
+                                        <span>Docs</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block transition md:px-4 hover:text-primary-600 dark:hover:text-primary-400">
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our expertise</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
-                        </li>
-                    </ul>
+                        <div class="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
+                            <button class="w-full h-9 lg:w-fit group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border dark:disabled:border-gray-800 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-800 hover:bg-gray-100 active:bg-gray-200/75 dark:text-gray-300 dark:hover:bg-gray-500/10 dark:active:bg-gray-500/15 lg:text-sm lg:h-8 px-3.5 justify-center">
+                                <span>Login</span>
+                            </button>
+                            <button class="w-full h-9 lg:w-fit group flex items-center relative border rounded-[--btn-border-radius] *:select-none [&>*:not(.sr-only)]:relative before:rounded-[calc(var(--btn-border-radius)-1px)] before:absolute before:inset-0 before:border before:bg-gradient-to-b *:disabled:opacity-20 disabled:text-gray-950/40 disabled:border-gray-200 disabled:bg-gray-100 disabled:*:text-gray-300 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:before:border-0 dark:before:border-t dark:before:shadow-inner dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 disabled:dark:*:text-gray-700 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none dark:*:disabled:!text-white text-white border-gray-950 bg-gray-600 before:border-gray-600 before:from-gray-800 hover:bg-gray-900 active:bg-gray-950 dark:text-gray-950 dark:before:border-gray-200 dark:before:from-gray-200 dark:bg-white dark:before:shadow-white/10 dark:hover:bg-gray-100 dark:active:bg-gray-300 dark:active:before:from-gray-200 lg:text-sm lg:h-8 px-3 justify-center">
+                                <span>Sign Up</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+    
         </nav>
     </header>
+
+
+
+
+    <div class="navbar bg-base-100">
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          </button>
+        </div>
+     
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+          </button>
+        </div>
+      </div>
     <main>
-        <!-- <section class="main-banner" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
+
+<!-- 
+          <section class="main-banner" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
             <div class="banner-slide owl-carousel owl-theme">
                 <div class="item-slide">
                     <div class="img-slider">
-                        <img src="../images/en.bunner.png" alt="Slider Image" />
+                        <img src="../images/footer-logo.png" alt="Slider Image" />
                     </div>
                     <h3 class="content-wrapper" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
                         <span>Welcome to</span> <br />
@@ -102,355 +153,187 @@
                 </div>
             </div>
         </section> -->
- <!-- </section> -->
-        <div class="container-fluid">
-            <section class="main-hero">
-                <div class="min-vh-80">
-                    <div class="hero-content d-flex flex-column text-white position-relative">
-                       
-                             <div class="w-100 d-flex up-content-wrapper">
-                                <p class="text-light">
-                                    We bridge the gap between business visionaries and tech innovators. We prioritize your business goals and leverage technology as the ultimate tool to achieve them.
-                                </p>
-                                <div class="action-wrapper ">
-                                    <a href="" class="link-action primary">
-                                        <div class="icon-box">
-                                            <img src="../images/Arrow.svg" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <h3 class="content-wrapper">
-                                <!-- <h3 class="content-wrapper" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
-                                 -->
-                                
-                                Bridging the Gap Between <br>
-                                <span class="hero-span">Business Vision </span>&
-                                <span class="hero-span">Tech Reality</span>
-                            </h3>
-                     
+
+
+        <section class="main-banner" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
+            <div class="banner-slide owl-carousel owl-theme">
+                <div class="item-slide">
+                    <div class="img-slider">
+                        <img src="../images/heroSection.jpg" alt="Slider Image" />
                     </div>
-                    <div class="hero-overlay position-absolute top-0 left-0 w-100 h-100"></div>
+                    <h3 class="content-wrapper" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
+                        بنك الاستثمار القومي  في مصر
+                    </h3>
+                    <p>مؤسسة مالية تابعة للحكومة المصرية، تهدف إلى دعم وتمويل المشروعات الاستثمارية في مصر في مختلف القطاعات الاقتصادية، وتعزيز التنمية الاقتصادية والاجتماعية في البلاد.</p>
+                    <div class="overlay"></div>
                 </div>
-            </section>
-
-        </div>
-    
-       
-        <section class="home-page">
-            <div class="container-fluid">
-                <!-- sec..1 -->
-                <section class="event-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2500">
-                    <div class="container">
-                        <div class="title-wrapper">
-                            <h2 class="">Crafting Tomorrow's Solutions, Today: Unveiling Our Suite of Innovative Services
-                            </h2>
-                        </div>
-                        <div class="crafting-sec owl-carousel owl-theme">
-                            <!--   event-card 1 -->
-                            <div class="event-card">
-                                <div class="content">
-                                    <div class="top-wrapper">
-                                        <h3 class="title"><a href="#">Product Design & Market  Research </a></h3>
-                                        <p class="dis">We offer a comprehensive approach to turn your tech idea into a reality. Through market research, we validate your concept and identify potential issues. Our user-centered design ensures a product that users love, while collaboration with engineers guarantees manufacturability. Finally, launching with an MVP allows for user feedback and continuous improvement for optimal market fit.​
-                                        </p>
-                                    </div>
-                                    <div class="action-wrapper">
-                                        <a href="" class="link-action primary">
-                                            <div class="icon-box">
-                                                <img src="../images/Arrow.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <img src="../images/product.jpg" alt="" />
-                            </div>
-                            <!-- event-card 2 -->
-                            <div class="event-card">
-                                <div class="content">
-                                    <div class="top-wrapper">
-                                        <h3 class="title"><a href="#"> Software Development</a></h3>
-                                        <p class="dis">We offer a full spectrum of software development services, from crafting user-friendly web applications and feature-rich mobile apps to streamlining development with DevOps, ensuring software quality through rigorous testing, and maintaining the highest standards with meticulous quality control..​
-                                        </p>
-                                    </div>
-                                    <div class="action-wrapper">
-                                        <a href="" class="link-action primary">
-                                            <div class="icon-box">
-                                                <img src="../images/Arrow.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <img src="../images/software.jpg" alt="" />
-
-                                <div class="overlay"></div>
-                            </div>
-                            <div class="event-card">
-
-                                <div class="content">
-                                    <div class="top-wrapper">
-                                        <h3 class="title"><a href="#">Infrastructure & <br>
-                                                Cloud Hosting</a></h3>
-                                        <p class="dis">From building secure on-premise infrastructure to orchestrating a seamless cloud migration, we empower businesses to thrive in the digital age. We offer a comprehensive suite of infrastructure and cloud hosting solutions, ensuring scalability, security, and peak performance. Focus on your business goals, while we handle the complex world of IT infrastructure..​
-                                        </p>
-                                    </div>
-                                    <div class="action-wrapper">
-                                        <a href="" class="link-action primary">
-                                            <div class="icon-box">
-                                                <img src="../images/Arrow.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <img src="../images/Infrastructure.jpg" alt="" />
-                            </div>
-                        </div>
-                        <!-- sec3-->
+                <div class="item-slide">
+                    <div class="img-slider">
+                        <img src="../images/heroSection.jpg" alt="Slider Image" />
                     </div>
-                </section>
-
-                <!-- Revolutionizing Engagement and Staffing -->
-                <section class="event-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2500">
-                    <div class="container">
-                        <div class="title-wrapper">
-                            <h2 class=""> Revolutionizing Engagement and Staffing: Our <br> Dynamic Models for Success</h2>
-                        </div>
-                        <div class="outsourcing-sec owl-carousel owl-theme">
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-8">
-                                        <div class="card-body ">
-                                            <h5 class="card-title">Team Outsourcing</h5>
-                                            <p class="card-text">We match your project needs with skilled professionals, forming a dedicated team that integrates seamlessly with your existing workflow. This flexible and cost-effective approach allows you to scale your tech resources and focus on core business goals, leaving the complexities of recruitment and management to us.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="../images/outsourcing.png" class="img-fluid rounded-start" alt="...">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Team Outsourcing</h5>
-                                            <p class="card-text">We match your project needs with skilled professionals, forming a dedicated team that integrates seamlessly with your existing workflow. This flexible and cost-effective approach allows you to scale your tech resources and focus on core business goals, leaving the complexities of recruitment and management to us.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="../images/outsourcing.png" class="img-fluid rounded-start" alt="...">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card mb-3">
-                                <div class="row g-0">
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Team Outsourcing</h5>
-                                            <p class="card-text">We match your project needs with skilled professionals, forming a dedicated team that integrates seamlessly with your existing workflow. This flexible and cost-effective approach allows you to scale your tech resources and focus on core business goals, leaving the complexities of recruitment and management to us.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <img src="../images/outsourcing.png" class="img-fluid rounded-start" alt="...">
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
+                    <h3 class="content-wrapper" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
+                        بنك الاستثمار القومي  في مصر
+                    </h3>
+                    <p>مؤسسة مالية تابعة للحكومة المصرية، تهدف إلى دعم وتمويل المشروعات الاستثمارية في مصر في مختلف القطاعات الاقتصادية، وتعزيز التنمية الاقتصادية والاجتماعية في البلاد.</p>
+                    <div class="overlay"></div>
+                </div>
+                <div class="item-slide">
+                    <div class="img-slider">
+                        <img src="../images/heroSection.jpg" alt="Slider Image" />
                     </div>
-                </section>
-
-                <!-- Discover the Difference -->
-                <section class="event-section" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2500">
-                    <div class="container">
-                        <div class="title-wrapper">
-                            <h2 class=""> Discover the Difference: Why Choose Us for Your <br> Next Project?</h2>
-                        </div>
-                        <div class="software-specific owl-carousel owl-theme">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <div class="icon-box">
-                                        <img src="../images/software-specialist.svg" alt="">
-                                    </div>
-                                    <h5 class="card-title">Software-Specific Expertise</h5>
-                                    <p class="card-text">We understand the unique challenges of software development. Our
-                                        team has a proven track record of helping startups build successful software
-                                        solutions.</p>
-
-                                </div>
-                            </div>
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <div class="icon-box">
-                                        <img src="../images/data.svg" alt="">
-                                    </div>
-                                    <h5 class="card-title">Data-Driven User Experience (UX):</h5>
-                                    <p class="card-text">We leverage user research and data analytics to inform all design decisions. This ensures a user-centric experience that resonates with your target audience and drives engagement.</p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-
-                <div class="experties-sec  my-4">
-                  
-                        <div class="core-values-wrap">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="container">
-                                    <div class="title" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                                        <h3>Expertise That Sets Us Apart</h3>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                                        <div class="core-values-item">
-                                            <div class="value-box">
-                                                <div class="icon-box">
-                                                    <img src="../images/courthouse.svg" alt="">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h4>Governmental sector</h4>
-
-                                                </div>
-                                            </div>
-                                            <div class="value-box">
-                                                <div class="icon-box">
-                                                    <img src="../images/building-4.svg" alt="">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h4>Educational Institutions</h4>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                                        <div class="core-values-item">
-                                            <div class="value-box">
-                                                <div class="icon-box">
-                                                    <img src="../images/bank.svg" alt="">
-                                                </div>
-                                                <div class="content-box">
-                                                    <h4>Banks</h4>
-
-                                                </div>
-                                            </div>
-                                            <div class="value-box">
-                                                <div class="icon-box">
-                                                    <img src="../images/private.svg" alt="">
-
-                                                </div>
-                                                <div class="content-box">
-                                                    <h4>Private Sector</h4>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="overlay"></div>
-
-                                </div>
-                            </div>
-
-                            <!-- <img class="core-vector" src="../images/expertise.jpg" alt=""> -->
-                        </div>
-                
+                    <h3 class="content-wrapper" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
+                        بنك الاستثمار القومي  في مصر
+                    </h3>
+                    <p>مؤسسة مالية تابعة للحكومة المصرية، تهدف إلى دعم وتمويل المشروعات الاستثمارية في مصر في مختلف القطاعات الاقتصادية، وتعزيز التنمية الاقتصادية والاجتماعية في البلاد.</p>
+                    <div class="overlay"></div>
                 </div>
             </div>
         </section>
 
-
     </main>
-    <footer class="bg-black text-white py-5">
+    <footer class="rounded-xl border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+        <div class="max-w-6xl px-6 py-16 mx-auto space-y-16 text-gray-600 2xl:px-0">
+            <div class="flex  items-center justify-between gap-4 border-b pb-8 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                <a href="/" >
+                    <img src="../../images/footer-logo.png" alt="">
+                </a>
 
-        <div class="container">
-
-            <div class="footer-top d-flex justify-content-between ">
-                <h1>Let's start <span> with us</span></h1>
-                <button data-mdb-ripple-init type="submit" class="btn btn-footer">
-                    Contact us
-                </button> 
-
-                <!-- <button class="btn btn-primary" type="button">Contact us</button> -->
-           
+                <p>بنك الاستثمار القومي في مصر يعتبر عمادًا أساسيًا في دعم التنمية الاقتصادية والاجتماعية في البلاد من خلال توفير بنك الاستثمار القومي في مصر يعتبر عمادًا أساسيًا في دعم التنمية الاقتصادية والاجتماعية في البلاد من خلال توفير </p>
+            
             </div>
-            <div class="row mt-3">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
-                    <h6 class="text-capitalize  fw-bold mb-4">
-                        <img src="../images/logoNAv-footer.png" alt="" style="width: 200px;">
-                    </h6>
-                    <p>
-                        We manage lead logistices
-                        for worlds multinational
-                        companies.
-                    </p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-capitalize fw-bold mb-4">
-                        Company
-                    </h6>
-                    <p>
-                        <a href="#!">Our services</a>
-                    </p>
-                    <p>
-                        <a href="#!">Engagement</a>
-                    </p>
-                    <p>
-                        <a href="#!">About Us</a>
-                    </p>
-                    <p>
-                        <a href="#!">Our expertise </a>
+            <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
+                <div>
 
-                    </p>
+                    <span class="font-medium text-gray-950 dark:text-white"> عن البنك
+                    </span>
+                    <ul class="mt-4 space-y-4 list-inside">
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">مجلس الإدارة
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">الرؤية والرسالة
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">القيم الأساسية
+                            </a>
+                        </li>
+                    
+                    </ul>
                 </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-capitalize  fw-bold mb-4">
-                        Contact
-                    </h6>
-                    <p>
-                        <a href="#!">16 Mohamed Mandour Street, Rabaa 11371 Nasr City, Cairo, Egypt</a>
-                    </p>
-                </div>
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <h6 class="text-capitalize  fw-bold mb-4">Contact</h6>
-                    <p>LinkedIn</p>
-                    <p>
-                        Youtube
-                    </p>
-                    <p> Twitter</p>
+                <div>
 
-                </div>
+                    <span class="text-sm font-medium text-gray-950 dark:text-white">المتابعات الميدانية
+                    </span>
+                    <ul class="mt-4 space-y-4 list-inside">
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">قطاع الهيئات الخدمية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">قطاع الجهاز الإداري
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">قطاع الإدارة المحلية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">قطاع الهيئات والوحدات الاقتصادية
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">>العمليات المصرفية
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-sm font-medium text-gray-950 dark:text-white">
+
+                        الخدمات
+
+                    
+</span>
+                    <ul class="mt-4 space-y-4 list-inside">
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">خدمات موظفي البنك</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">خدمات جمعية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">خدمة تسجيل الموردين</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">خدمات التوظيف والتدريب
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">المؤشرات الاقتصادية 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">المكتبة</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div>
+                    <span class="text-sm font-medium text-gray-950 dark:text-white"> الأحداث الهامة
+                    </span>
+                    <ul class="mt-4 space-y-4 list-inside">
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">أخبار البنك
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">إعلانات الوظائف والتدريب
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">إعلانات المناقصات والمزايدات
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                 
+                </div>
+            </div>
+            <div class="flex items-center justify-between px-6 py-3 bg-gray-100 rounded-md dark:bg-gray-900">
+                <span class="text-gray-600 dark:text-gray-400">جميع الحقوق محفوظه </span>
+
+
+                <div class="flex gap-3">
+                    <a href="https://github.com/tailus-ui" target="blank" aria-label="github" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/tailus_ui" target="blank" aria-label="twitter" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/>
+                        </svg>
+                    </svg>
+                    </a>
+                    <a href="https://youtube.com/@tailus-ui" target="blank" aria-label="medium" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/></svg>
+                    </a>
+                </div>
+             
             </div>
         </div>
     </footer>
-    <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/owl.carousel.min.js"></script>
     <script src="../scripts/script.js"></script>
 </body>

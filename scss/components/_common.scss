@@ -14,7 +14,7 @@ body {
   // font-family: $font-base;
   // font-weight: 300;
   font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1;
+  font-feature-settings: "liga" 1, "calt" 1;
 }
 h1 {
   font-size: 3.125rem;
@@ -67,9 +67,8 @@ a {
   font-weight: 600;
   color: $black;
   text-transform: capitalize;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
-
 
 .owl-nav {
   right: 0;
@@ -93,4 +92,79 @@ a {
       }
     }
   }
+}
+
+.owl-item {
+  &.active {
+    .slider-item {
+      .container {
+        .slider-content {
+          h2 {
+            animation: fadeInUp 1300ms;
+          }
+          .action-wrapper {
+            animation: fadeInUp 1500ms;
+          }
+        }
+      }
+    }
+  }
+}
+
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  background-color: #e7e7e7;
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-end;
+  .owl-dot {
+    background-color:$brand-blue1;
+    margin-right: 15px;
+    opacity: 0.5;
+    border: solid 2px $brand-primary;
+    width: 100%;
+    height: 10px;
+    margin-right: 37px;
+
+    border: solid 2px #0c254e;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      background-color: $brand-primary;
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+}
+
+@media screen and (max-width: 1199px) {
+}
+@media screen and (max-width: 769px) {
+  .title-wrapper {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 580px) {
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .title-wrapper {
+    font-size: 35px !important;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 325px) {
 }

@@ -1,6 +1,6 @@
 footer {
   padding: 120px 0;
- .footer-top {
+  .footer-top {
     margin-bottom: 3rem;
     h1 {
       color: $brand-blue2;
@@ -18,9 +18,11 @@ footer {
       color: #ffffff;
       font-size: 22px;
       width: 25%;
+      height: 60px;
+      margin: 0 45px 45px;
     }
     .btn-footer:hover {
-      background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+      background: linear-gradient(to bottom, #0862ff 5%, #0862ff 100%);
       background-color: #0688fa;
     }
     .btn-footer:active {
@@ -28,12 +30,72 @@ footer {
       top: 1px;
     }
   }
-  p {
-    a {
-      &:hover {
-        text-decoration: solid;
+  a {
+    &:hover {
+      text-decoration: solid;
+      color: $brand-blue;
+    }
+  }
+  h6 {
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+}
+
+@media screen and (max-width: 1199px) {
+  footer {
+    .footer-top {
+      h1 {
+        font-size: 75px;
+        font-weight: 500;
+      }
+      .btn-footer {
+        // font-size: 22px;
+        width:unset;
+        // display: block;
+        margin: 0 49px;
       }
     }
   }
+}
+@media screen and (max-width: 769px) {
+  footer {
+    .footer-top {
+      h1 {
+        font-size: 100px;
+        font-weight: 500;
+      }
+      .btn-footer {
+        font-size: 22px;
+        width: 25%;
+        display: block;
+        margin: unset !important;
+        // margin: 0 45px 45px;
+      }
+    }
  
+  }
+}
+@media screen and (max-width: 580px) {
+  footer {
+    .footer-top {
+      h1 {
+        font-size: 75px;
+        font-weight: 500;
+      }
+      .btn-footer {
+        // font-size: 22px;
+        width:unset;
+        display: block;
+        margin: 15px 0;
+      }
+    }
+ 
+  }
+}
+@media screen and (max-width: 325px) {
 }
