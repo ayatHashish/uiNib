@@ -25,32 +25,28 @@ $(document).ready(function () {
             autoplay: true,
             slideBy: 1,
         })
-        $('.crafting-sec').owlCarousel({
+        $('.ourService-slide').owlCarousel({
             loop: true,
             nav: true,
             margin: 50,
-            items: 3,
+            items: 5,
             dots: true,
             slideSpeed: 10000,
             autoplaySpeed: 800,
             autoplayTimeout: 5000,
             autoplay: true,
-            navText: [
-                '<i class="fi-circle-arrow-left1"></i>',
-                '<i class="fi-circle-arrow-right1"></i>'
-            ],
+            // navText: [
+            //     '<i class="fi-circle-arrow-left1"></i>',
+            //     '<i class="fi-circle-arrow-right1"></i>'
+            // ],
             responsiveClass: true,
             responsive: {
-                1200: { items: 3 },
-                900: { items: 2 },
+                1200: { items: 5 },
+                900: { items: 3 },
                 700: { 
-                    items: 1 ,
-                    center: true 
-
-
-
+                    items: 5 ,
                 },
-                0: { items: 1 , center: true  }
+                0: { items: 1  }
             }
         })
 

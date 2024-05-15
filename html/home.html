@@ -5,9 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
     <link rel="stylesheet" href="../css/inner.en.css" />
-    <link rel="stylesheet" href="../css/inner.en.css" />
+
 
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -15,6 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
 
 
@@ -22,29 +22,18 @@
 </head>
 
 <body class="ar" dir="rtl">
-
-
-    <!-- <div class="loader-wrapper">
-        <div class="loader"> -->
-    <!-- <div class="preloader_inner">0</div>
-        </div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div> -->
-    <!-- </div> -->
-    <!-- header -->
-
     <header>
         <nav class="fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/0 dark:shadow-md rounded-b-lg dark:shadow-gray-950/10 border-b border-[--ui-light-border-color] border-x dark:border-[--ui-dark-border-color] backdrop-blur-2xl">
-            <div class="max-w-6xl px-6 m-auto 2xl:px-0">   
-                
+            <div class="max-w-6xl px-6 m-auto 2xl:px-0">
+
                 <button aria-label="Search" class="relative transition duration-300 border rounded-full border-gray-950/30 dark:border-white/20 size-9 active:scale-95">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 9a1 1 0 011-1h1a4 4 0 10-2 0H8a1 1 0 011 1z" clip-rule="evenodd" />
-                </svg>
-            </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9 9a1 1 0 011-1h1a4 4 0 10-2 0H8a1 1 0 011 1z" clip-rule="evenodd" />
+                    </svg>
+                </button>
                 <div class="flex flex-wrap items-center justify-between py-2 sm:py-4">
                     <div class="flex items-center justify-between w-full lg:w-auto">
-                        <a >
+                        <a>
                             <img src="../../images/footer-logo.png" alt="">
 
                         </a>
@@ -85,7 +74,8 @@
                             <button class="w-full h-9 lg:w-fit group flex items-center rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border dark:disabled:border-gray-800 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-800 hover:bg-gray-100 active:bg-gray-200/75 dark:text-gray-300 dark:hover:bg-gray-500/10 dark:active:bg-gray-500/15 lg:text-sm lg:h-8 px-3.5 justify-center">
                                 <span>Login</span>
                             </button>
-                            <button class="w-full h-9 lg:w-fit group flex items-center relative border rounded-[--btn-border-radius] *:select-none [&>*:not(.sr-only)]:relative before:rounded-[calc(var(--btn-border-radius)-1px)] before:absolute before:inset-0 before:border before:bg-gradient-to-b *:disabled:opacity-20 disabled:text-gray-950/40 disabled:border-gray-200 disabled:bg-gray-100 disabled:*:text-gray-300 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:before:border-0 dark:before:border-t dark:before:shadow-inner dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 disabled:dark:*:text-gray-700 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none dark:*:disabled:!text-white text-white border-gray-950 bg-gray-600 before:border-gray-600 before:from-gray-800 hover:bg-gray-900 active:bg-gray-950 dark:text-gray-950 dark:before:border-gray-200 dark:before:from-gray-200 dark:bg-white dark:before:shadow-white/10 dark:hover:bg-gray-100 dark:active:bg-gray-300 dark:active:before:from-gray-200 lg:text-sm lg:h-8 px-3 justify-center">
+                            <button
+                                class="w-full h-9 lg:w-fit group flex items-center relative border rounded-[--btn-border-radius] *:select-none [&>*:not(.sr-only)]:relative before:rounded-[calc(var(--btn-border-radius)-1px)] before:absolute before:inset-0 before:border before:bg-gradient-to-b *:disabled:opacity-20 disabled:text-gray-950/40 disabled:border-gray-200 disabled:bg-gray-100 disabled:*:text-gray-300 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:before:border-0 dark:before:border-t dark:before:shadow-inner dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 disabled:dark:*:text-gray-700 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none dark:*:disabled:!text-white text-white border-gray-950 bg-gray-600 before:border-gray-600 before:from-gray-800 hover:bg-gray-900 active:bg-gray-950 dark:text-gray-950 dark:before:border-gray-200 dark:before:from-gray-200 dark:bg-white dark:before:shadow-white/10 dark:hover:bg-gray-100 dark:active:bg-gray-300 dark:active:before:from-gray-200 lg:text-sm lg:h-8 px-3 justify-center">
                                 <span>Sign Up</span>
                             </button>
                         </div>
@@ -93,29 +83,29 @@
                 </div>
             </div>
 
-    
+
         </nav>
     </header>
-
-
-
-
     <div class="navbar bg-base-100">
         <div class="flex-none">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-          </button>
+            <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
-     
+
         <div class="flex-none">
-          <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
-          </button>
+            <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
+                </svg>
+            </button>
         </div>
-      </div>
+    </div>
     <main>
 
-<!-- 
+        <!-- 
           <section class="main-banner" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="1100">
             <div class="banner-slide owl-carousel owl-theme">
                 <div class="item-slide">
@@ -191,34 +181,278 @@
         </section> -->
 
 
-        <div class="min-h-64 hero" style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="text-center hero-content text-neutral-content">
-             <div class="max-w-xs bg-red hadow-lg bunded pgtransform ration-300 bgransition oerflow-hidden ba hover:bg-gradient-to-t from-blue-500 via-purple-500 to-pink-500 hover:scale-105">
-            <div class="px-6 py-4">
-              <div class="flex items-center justify-center mb-4">
-             <img src="../images/people.svg" alt="people">
-              </div>
-              <div class="mb-2 text-xl font-bold text-white">Card Title</div>
-             
-            </div>
-          </div>
-            </div>
-          </div>
+   
 
-     
-          
+        <!-- <script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            rtl: true,
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
+    });
+</script>
+
+           -->
+
+
+        <div class="container px-4 mx-auto">
+            <!-- Hero Section -->
+            <section class="py-8 text-center bg-white shadow-md">
+                <img src="path/to/hero-image.jpg" alt="Hero Image" class="object-cover w-full h-64 mb-4">
+                <h1 class="mb-4 text-4xl font-bold">بنك الاستثمار القومي في مصر</h1>
+                <p class="text-lg">استثمار مستدام لمستقبل أفضل</p>
+            </section>
+
+            <!-- Timeline Section -->
+            <!-- <section class="py-8">
+                <h2 class="mb-4 text-2xl font-bold text-center">الجدول الزمني</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="p-4 bg-white rounded-md shadow-md item">
+                        <h3 class="mb-2 text-lg font-semibold">2020</h3>
+                        <p>حدث مهم في 2020.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md item">
+                        <h3 class="mb-2 text-lg font-semibold">2021</h3>
+                        <p>حدث مهم في 2021.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md item">
+                        <h3 class="mb-2 text-lg font-semibold">2022</h3>
+                        <p>حدث مهم في 2022.</p>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Projects Section -->
+            <section class="">
+                <div class="description-wrapper">
+                <div class="flex pm-8 section-name">
+                    <div class=" icon">
+                        <img src="../images/icon2.png" alt="">
+                    </div>
+                    <!-- <p class="title-name">
+                        المشاريع والعمليات
+                        
+                    </p> -->
+
+                    <h2 class="px-3 mb-4 text-2xl font-bold text-"> المشاريع والعمليات</h2>
+
+                </div>
+
+
+                <div class="title-wrapper">
+                    <h2 class="mb-4 text-2xl font-bold ">تتبوأ بنك الاستثمار القومي في مصر دوراً بارزاً كنقطة ارتكاز للاستثمار بفضل المتابعة الميدانية المتميزة للمشاريع الاستثمارية.</h2>
+
+                    <p>يقوم بنك الاستثمار القومي في مصر بدور حيوي يتمثل في متابعة ميدانية متميزة للمشاريع الاستثمارية، مما يعزز مكانته كنقطة ارتكاز للاستثمار.</p>
+                </div>
+            </div>
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                    <div class="p-4 bg-white rounded-md shadow-md">
+                        <img src="./../images/progect1.png" alt="Project 1" class="object-cover w-full h-48 mb-4 rounded-md">
+                        <h3 class="mb-2 text-lg font-semibold">مشروع تابع للهيئة العامة للمستشفيات والمعاهد التعليمية لعام 2023 /2024 </h3>
+                        <p>وصف المشروع 1.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md">
+                        <img src="./../images/progect1.png" alt="Project 1" class="object-cover w-full h-48 mb-4 rounded-md">
+                        <h3 class="mb-2 text-lg font-semibold">مشروع
+                              المجمع التكنولوجي بالأميرية بمحافظة القاهرة
+                            معرفة المزيد </h3>
+                        <p> </p>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md">
+                        <img src="./../images/progect1.png" alt="Project 1" class="object-cover w-full h-48 mb-4 rounded-md">
+                        <h3 class="mb-2 text-lg font-semibold">مشروع المجمع التكنولوجي بالأميرية بمحافظة القاهرة</h3>
+                        <p> </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <!-- <section class="py-8 bg-gray-100">
+                <h2 class="mb-4 text-2xl font-bold text-center">خدماتنا</h2>
+                <div class="grid grid-cols-1 gap-4 text-center md:grid-cols-3">
+                    <div class="p-4 bg-white rounded-md shadow-md">
+                        <h3 class="mb-2 text-lg font-semibold">الخدمة 1</h3>
+                        <p>وصف الخدمة 1.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md">
+                        <h3 class="mb-2 text-lg font-semibold">الخدمة 2</h3>
+                        <p>وصف الخدمة 2.</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md">
+                        <h3 class="mb-2 text-lg font-semibold">الخدمة 3</h3>
+                        <p>وصف الخدمة 3.</p>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Statistics Section -->
+            <!-- <section class="py-8 text-center bg-white rounded-md shadow-md">
+                <h2 class="mb-4 text-2xl font-bold">الإحصاءات</h2>
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                    <div>
+                        <h3 class="text-4xl font-bold">100+</h3>
+                        <p>مشروع مكتمل</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold">200+</h3>
+                        <p>عميل سعيد</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold">50</h3>
+                        <p>جائزة</p>
+                    </div>
+                </div>
+            </section> -->
+             
+            
+            <div class="py-20 min-h-100 hero" style="background-image: url(../images/Frame121.png);">
+
+                <div class=" bg-opacity-60"></div>
+                <div class="flex flex-col hero-content ">
+                    <div class="description-wrapper">
+                        <div class="flex text-white pm-8 section-name">
+                          <div class="icon">
+                              <img src="../images/icon2.png" alt="">
+                          </div>
+                          <h2 class="px-3 mb-4 text-2xl font-bold text-white"> ما نقدمه </h2>
+                      </div>
+                      <div class="text-white title-wrapper">
+                          <h2 class="mb-4 text-2xl font-bold "> استكشاف خدمات بنك الاستثمار القومي في مصر</h2>
+                          <p>تتضمن خدمات بنك الاستثمار القومي مجموعة واسعة من الخدمات المالية والمصرفية المبتكرة لتلبية احتياجات العملاء وتمكينهم من تحقيق أهدافهم المالية والاستثمارية.</p>
+                      </div>
+                    </div>
+                    
+
+
+       
+                    <section class="ourService-sec" >
+                        <!-- <div class="ourService-slide owl-carousel owl-theme"> -->
+                             <div class="max-w-xs hadow-lg bunded pgtransform ration-300 bgransition oerflow-hidden ba hover:scale-105">
+                             <div class="px-16 py-16 rounded-md bg-neutral-400">
+                            <div class="flex mb-4">
+                                <img src="../images/people.svg" alt="people">
+                            </div>
+                            <div class="mb-2 text-xl font-bold text-white">خدمات العاملين</div>
+    
+                        </div>
+                   
+                                </div>
+                     
+                            <!-- </div> -->
+                        </section> 
+                
+                      
+                    </div>
+                </div>
+            </div>
+
+                  <!-- news -->
+                  <!-- News Section -->
+            <div class="container px-4 py-8 mx-auto">
+                <section class="p-8 bg-white rounded-md shadow-md">
+                    <div class="mb-8 text-center">
+                        <h2 class="text-2xl font-bold">أخبار بنك الاستثمار القومي</h2>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+                        <!-- Card 1 -->
+                        <div class="relative overflow-hidden rounded-md h-100 news-card" style="background-image: url('../images/Rectangle27.png');">
+                            <div class="absolute inset-0 flex items-end p-4 news-overlay">
+                                <p class="text-lg font-semibold text-white">
+                                    في احتفالية قصر النجاح في مسيرة بنك الاستثمار القومي
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="relative h-64 overflow-hidden rounded-md news-card" style="background-image: url('../images/Rectangle27-1.png');">
+                            <div class="absolute inset-0 flex items-end p-4 news-overlay">
+                                <p class="text-lg font-semibold text-white">
+                                    إعلان تعديل نص المادة 126 من لائحة شؤون العاملين المطبقة على العاملين ببنك الاستثمار القومي
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="relative h-64 overflow-hidden rounded-md news-card" style="background-image: url('../images/Rectangle27-2.png')">
+                            <div class="absolute inset-0 flex items-end p-4 news-overlay">
+                                <p class="text-lg font-semibold text-white">
+                                    رئيس الوزراء يتابع موقف إجراءات فض التشابكات المالية بين بنك الاستثمار القومي وهيئة البريد
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button class="px-4 py-2 text-white bg-orange-500 rounded-md">عرض جميع الأخبار</button>
+                    </div>
+                </section>
+            </div>
+
+
+
+            <!-- Testimonials Section -->
+            <!-- <section class="py-8">
+               <h2 class="mb-4 text-2xl font-bold text-center">آراء العملاء</h2>
+                <div class="owl-carousel owl-theme">
+                    <div class="p-4 bg-white rounded-md shadow-md item">
+                        <p>رأي العميل 1.</p>
+                        <h3 class="text-lg font-semibold">العميل 1</h3>
+                    </div>
+                    <div class="p-4 bg-white rounded-md shadow-md item">
+                        <p>رأي العميل 2.</p>
+                        <h3 class="text-lg font-semibold">العميل 2</h3>
+                    </div>
+                    أضف المزيد من العناصر حسب الحاجة 
+                </div> 
+               </section> -->
+
+
+               
+            <!-- Partners Section -->
+
+            <section class="py-8 bg-gray-100">
+
+
+                <div class="flex justify-center section-name ">
+                    <span class="text-center icon">
+                        <img src="../images/icon2.png" alt="">
+                    </span>
+                   
+                    <h2 class="mb-4 text-2xl font-bold text-center">جهات تابعة للوزارة</h2>
+
+                </div>
+                <div class="flex flex-wrap items-center justify-center space-x-4">
+                    <img src="../images/wzare.png" alt="Logo 1" class="h-24 mx-4 my-4">
+                    <img src="../images/Central_Bank_of_Egypt_Logo 1.png" alt="Logo 1" class="h-24 mx-4 my-4">
+                    <img src="../images/EGX_logo_2018.png" alt="Logo 1" class="h-24 mx-4 my-4">
+                    <img src="../images/logo.png" alt="Logo 1" class="h-24 mx-4 my-4">
+
+                </div>
+            </section>
+
+
 
     </main>
+    
     <footer class="rounded-xl border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
         <div class="max-w-6xl px-6 py-16 mx-auto space-y-16 text-gray-600 2xl:px-0">
             <div class="flex  items-center justify-between gap-4 border-b pb-8 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                <a href="/" >
+                <a href="/">
                     <img src="../../images/footer-logo.png" alt="">
                 </a>
 
                 <p>بنك الاستثمار القومي في مصر يعتبر عمادًا أساسيًا في دعم التنمية الاقتصادية والاجتماعية في البلاد من خلال توفير بنك الاستثمار القومي في مصر يعتبر عمادًا أساسيًا في دعم التنمية الاقتصادية والاجتماعية في البلاد من خلال توفير </p>
-            
+
             </div>
             <div class="grid grid-cols-2 gap-6 sm:grid-cols-4">
                 <div>
@@ -238,7 +472,7 @@
                             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">القيم الأساسية
                             </a>
                         </li>
-                    
+
                     </ul>
                 </div>
                 <div>
@@ -275,8 +509,8 @@
 
                         الخدمات
 
-                    
-</span>
+
+                    </span>
                     <ul class="mt-4 space-y-4 list-inside">
                         <li>
                             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">خدمات موظفي البنك</a>
@@ -299,7 +533,7 @@
                         <li>
                             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">المكتبة</a>
                         </li>
-                       
+
                     </ul>
                 </div>
                 <div>
@@ -318,10 +552,10 @@
                             <a href="#" class="text-sm text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">إعلانات المناقصات والمزايدات
                             </a>
                         </li>
-                        
+
                     </ul>
 
-                 
+
                 </div>
             </div>
             <div class="flex items-center justify-between px-6 py-3 bg-gray-100 rounded-md dark:bg-gray-900">
@@ -331,27 +565,37 @@
                 <div class="flex gap-3">
                     <a href="https://github.com/tailus-ui" target="blank" aria-label="github" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
                         <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                         </svg>
                     </a>
                     <a href="https://twitter.com/tailus_ui" target="blank" aria-label="twitter" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
                         <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/>
+                            <path fill="currentColor" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
                         </svg>
-                    </svg>
+                        </svg>
                     </a>
                     <a href="https://youtube.com/@tailus-ui" target="blank" aria-label="medium" class="size-8 flex *:m-auto rounded-[--btn-border-radius] text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-500">
-                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73"/></svg>
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="m10 15l5.19-3L10 9zm11.56-7.83c.13.47.22 1.1.28 1.9c.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83c-.25.9-.83 1.48-1.73 1.73c-.47.13-1.33.22-2.65.28c-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44c-.9-.25-1.48-.83-1.73-1.73c-.13-.47-.22-1.1-.28-1.9c-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83c.25-.9.83-1.48 1.73-1.73c.47-.13 1.33-.22 2.65-.28c1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44c.9.25 1.48.83 1.73 1.73" />
+                        </svg>
                     </a>
                 </div>
-             
+
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+    
     <script src="../scripts/aos.js"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="../scripts/jquery.min.js"></script>
     <script src="../scripts/owl.carousel.min.js"></script>
     <script src="../scripts/script.js"></script>
