@@ -2,9 +2,8 @@
   "dependencies": {
     "tailwindcss": "^3.4.3"
   },
-
-    "scripts": {
-      "build:css": "tailwindcss build css/inner.en.css -o output.css",
-      "watch:css": "tailwindcss build css/inner.en.css -o output.css --watch" 
-    }}
-  
+  "scripts": {
+    "build:css": "tailwindcss build css/inner.en.css -o output.css",
+    "watch:css": "tailwindcss build css/inner.en.css -o output.css --watch",
+    "build": "npx tailwindcss -i ./html/style.css -o ./src/output.css --watch"
+  }
