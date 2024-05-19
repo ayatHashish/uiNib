@@ -24,25 +24,27 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".btn": {
-          padding: "0.5rem 1rem",
-          borderRadius: "0.375rem",
+          padding: "7px 31px",
+          borderRadius: "28px ",
           fontWeight: "600",
           display: "inline-block",
           textAlign: "center",
           cursor: "pointer",
-          backgroundColor: "#44c767",
+          // backgroundColor: "#rgb(249, 115, 22)",
           color: "#ffffff",
           textDecoration: "none",
           textShadow: "0px -1px 7px #2f6627",
+          outline: "none",
+
           "&:hover": {
             opacity: "0.8",
           },
         },
         ".btn-primary": {
-          backgroundColor: "#ef4444",
+          backgroundColor: "#f97316",
           color: "#ffffff",
           "&:hover": {
-            backgroundColor: "#b91c1c",
+            opacity: "0.8",
           },
         },
         ".btn-secondary": {
