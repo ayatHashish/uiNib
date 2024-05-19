@@ -1,4 +1,7 @@
 @charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* @import "../../../../Content/scss/bootstrap";
 @import "../../../../Content/scss/bootstrap-tour";
 @import "../../../../Content/scss/_common.scss";

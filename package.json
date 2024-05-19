@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+
+    "scripts": {
+      "build:css": "tailwindcss build css/inner.en.css -o output.css",
+      "watch:css": "tailwindcss build css/inner.en.css -o output.css --watch",
+      "build": "npx tailwindcss -i ./html/sty -o ./src/output.css --watch"
+    }
+  
+}

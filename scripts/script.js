@@ -29,7 +29,7 @@ $(document).ready(function () {
             loop: true,
             nav: true,
             margin: 50,
-            items: 5,
+            items: 1,
             dots: true,
             slideSpeed: 10000,
             autoplaySpeed: 800,

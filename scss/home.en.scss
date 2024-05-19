@@ -1,4 +1,7 @@
-﻿
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "components/variables";
 @import "_keys/plugins.common";
 @import "_keys/components";
