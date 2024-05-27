@@ -371,17 +371,52 @@ a {
   background-color: #d4b179;
   color: white; }
 
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; }
+
+.board-item {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box; }
+
+.card-body {
+  padding: 15px; }
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+.card-text {
+  font-size: 14px;
+  color: #555; }
+
+.card-text a {
+  color: #007bff;
+  text-decoration: none; }
+
+.card-text a:hover {
+  text-decoration: underline; }
+
 @media screen and (max-width: 769px) {
   .title-wrapper {
     padding-bottom: 50px; } }
 @media screen and (max-width: 580px) {
-  h2 {
-    font-size: 2rem;
-    font-weight: 700; }
-
   .title-wrapper {
     font-size: 35px !important;
     font-weight: 500; } }
+@media (max-width: 900px) {
+  .board-item {
+    flex: 1 1 45%;
+    max-width: 45%; } }
+@media (max-width: 600px) {
+  .board-item {
+    flex: 1 1 100%;
+    max-width: 100%; } }
 header {
   padding: 15px; }
   header .fixed-nav {
@@ -720,17 +755,52 @@ a {
   background-color: #d4b179;
   color: white; }
 
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; }
+
+.board-item {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box; }
+
+.card-body {
+  padding: 15px; }
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+.card-text {
+  font-size: 14px;
+  color: #555; }
+
+.card-text a {
+  color: #007bff;
+  text-decoration: none; }
+
+.card-text a:hover {
+  text-decoration: underline; }
+
 @media screen and (max-width: 769px) {
   .title-wrapper {
     padding-bottom: 50px; } }
 @media screen and (max-width: 580px) {
-  h2 {
-    font-size: 2rem;
-    font-weight: 700; }
-
   .title-wrapper {
     font-size: 35px !important;
     font-weight: 500; } }
+@media (max-width: 900px) {
+  .board-item {
+    flex: 1 1 45%;
+    max-width: 45%; } }
+@media (max-width: 600px) {
+  .board-item {
+    flex: 1 1 100%;
+    max-width: 100%; } }
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch

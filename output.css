@@ -936,6 +936,10 @@ video {
   width: 0.75rem;
 }
 
+.w-32{
+  width: 8rem;
+}
+
 .w-4{
   width: 1rem;
 }
@@ -1231,11 +1235,6 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1282,6 +1281,11 @@ video {
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1803,6 +1807,44 @@ a {
   color: white;
 }
 
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.board-item {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 769px) {
   .title-wrapper {
     padding-bottom: 50px;
@@ -1810,14 +1852,23 @@ a {
 }
 
 @media screen and (max-width: 580px) {
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
   .title-wrapper {
     font-size: 35px !important;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 900px) {
+  .board-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .board-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
@@ -2291,6 +2342,44 @@ a {
   color: white;
 }
 
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.board-item {
+  flex: 1 1 30%;
+  max-width: 30%;
+  box-sizing: border-box;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 769px) {
   .title-wrapper {
     padding-bottom: 50px;
@@ -2298,14 +2387,23 @@ a {
 }
 
 @media screen and (max-width: 580px) {
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
   .title-wrapper {
     font-size: 35px !important;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 900px) {
+  .board-item {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .board-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
