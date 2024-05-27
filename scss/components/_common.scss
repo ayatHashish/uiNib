@@ -4,42 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  // background-color:$off-white;
-  // font-family: "Futura PT";
-  // font-size: $font-size-base;
-  // position: relative;
-  // max-width: 100vw;
-  // overflow-x: hidden;
-  // /*     color: $ad-black; */
-  // font-family: $font-base;
-  // font-weight: 300;
+
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1;
 }
-h1 {
-  font-size: 3.125rem;
-  font-weight: 700;
-}
-h2 {
-  font-size: 2.625rem;
-  font-weight: 700;
-}
-h3 {
-  font-size: 1.975rem;
-  font-weight: 700;
-}
-h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-h5 {
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-h6 {
-  font-size: 1rem;
-  font-weight: 500;
-}
+
 input,
 button {
   &:focus {
@@ -70,79 +39,26 @@ a {
   padding-bottom: 80px;
 }
 
-.owl-nav {
-  right: 0;
-  position: absolute;
-  top: -95px;
-  font-size: 40px;
-  margin: 0px 60px;
-  display: block;
-  button {
-    /* height: 48px;
-    width: 40px; */
-    i {
-      font-size: 30px;
-      color: $pure-white;
-      background-color: $brand-primary;
-      border-radius: 100%;
-      margin: 0 5px;
-      &:hover {
-        background-color: $pure-white;
-        color: $brand-primary;
-      }
-    }
-  }
+.custom-nav {
+  position: relative;
+  // text-align: center;
+  margin-top: 10px;
 }
 
-.owl-item {
-  &.active {
-    .slider-item {
-      .container {
-        .slider-content {
-          h2 {
-            animation: fadeInUp 1300ms;
-          }
-          .action-wrapper {
-            animation: fadeInUp 1500ms;
-          }
-        }
-      }
-    }
-  }
+.custom-prev, .custom-next {
+  background-color: transparent;
+  border: 1px solid #d4b179;
+  border-radius: 50%;
+  color: #d4b179;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.owl-nav {
-  display: none;
-}
-.owl-dots {
-  background-color: #e7e7e7;
-  position: absolute;
-  bottom: -17px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1440px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: flex-end;
-  .owl-dot {
-    background-color:$brand-blue1;
-    margin-right: 15px;
-    opacity: 0.5;
-    border: solid 2px $brand-primary;
-    width: 100%;
-    height: 10px;
-    margin-right: 37px;
-
-    border: solid 2px #0c254e;
-    &:last-child {
-      margin-right: 0;
-    }
-    &.active {
-      background-color: $brand-primary;
-      opacity: 1;
-    }
-  }
+.custom-prev:hover, .custom-next:hover {
+  background-color: #d4b179;
+  color: white;
 }
 
 @media screen and (max-width: 1399px) {

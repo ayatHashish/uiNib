@@ -2,21 +2,25 @@
 module.exports = {
   content: ["./html/**/*.{html,js}"],
   theme: {
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],
+    },
+
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
-        primary: {
-          light: "#fca5a5",
-          DEFAULT: "#ef4444",
-          dark: "#b91c1c",
-        },
-        secondary: {
-          light: "#fbbf24",
-          DEFAULT: "#f59e0b",
-          dark: "#b45309",
-        },
+        primary:"#115846",
+        secondary:"#CC903F",
+        gray:"#F7F7F7",
+        gray3:"#515151",
+
       },
       borderRadius: {
-        xl: "1.25rem",
+          '12px': '0.75rem',
+     
       },
     },
   },
@@ -41,14 +45,14 @@ module.exports = {
           },
         },
         ".btn-primary": {
-          backgroundColor: "#f97316",
+          backgroundColor: "#CC903F",
           color: "#ffffff",
         },
         ".btn-secondary": {
-          backgroundColor: "#f59e0b",
+          backgroundColor: "#115846",
           color: "#ffffff",
           "&:hover": {
-            backgroundColor: "#fbbf24",
+          opacity:"0.8"
           },
         },
         ".btn-green": {
@@ -69,13 +73,16 @@ module.exports = {
           backgroundColor: "#ffffff",
           backgroundSize:"cover",
           backgroundRepeat:"no-repeat",
-          borderRadius: "8px",
+          borderRadius: "30px",
           boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
           padding: "20px",
           marginBottom: "20px", 
           position:"relative",
           overflow:"hidden",
-          height:"508px ",
+          // height:"508px ",
+
+
+
           "&:hover": {
             ".news-details":  {
               opacity: "1",
@@ -86,21 +93,31 @@ module.exports = {
               background: "rgba(0, 0, 0, 0.8)",
             }
           },
-         ".news-details"  :{
-            opacity: "0",
-            transform: "translateY(20px)",
-            transition: "opacity 0.3s ease, transform 0.3s ease",
-          
-          }
+   
+          ".news-details"  :{
+                opacity: "0",
+                transform: "translateY(20px)",
+                transition: "opacity 0.3s ease, transform 0.3s ease",
+              
+              } ,
         },
+ 
+        ".card-scale":{
 
+         " &:hover":{
+          transform: "scale(0.9)"
+
+          }
+        }
+
+        ,
        ".news-overlay":{
           background: "rgba(0, 0, 0, 0.6)",
           transition: "background 0.3s ease",
         }
         
 ,
-        ".Partner-image":{
+        ".partner-image":{
           width: "16rem",
           height: "5rem",
         } ,

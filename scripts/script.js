@@ -14,29 +14,36 @@ $(document).ready(function () {
 
     //  }, 1500);
     $('.custom-carousel').owlCarousel({
-          loop: true,
-          nav: true,
-          margin: 50,
-          items: 3,
-          dots: true,
-          slideSpeed: 10000,
-          autoplaySpeed: 800,
-          autoplayTimeout: 5000,
-          autoplay: false,
-          // navText: [
-          //     '<i class="fi-circle-arrow-left1"></i>',
-          //     '<i class="fi-circle-arrow-right1"></i>'
-          // ],
-          responsiveClass: true,
-          responsive: {
-            
-              900: { items: 3 },
-              700: { 
-                  items: 5 ,
-              },
-              0: { items: 1  }
-          }
-      })
+      loop: true,
+      margin: 50,
+      items: 3,
+      nav: false,
+      dots: false,
+      slideSpeed: 10000,
+      autoplaySpeed: 800,
+      autoplayTimeout: 5000,
+      autoplay: false,
+      navText: [
+          '<i class="fa-solid fa-chevron-left"></i>',
+          '<i class="fa-solid fa-chevron-right"></i>',
+      ],
+      responsiveClass: true,
+      responsive: {
+          900: { items: 3 },
+          700: { items: 2 },
+          0: { items: 1 }
+      }
+  });
+
+  $('.custom-next').click(function() {
+      owl.trigger('next.owl.carousel');
+  });
+
+  $('.custom-prev').click(function() {
+      owl.trigger('prev.owl.carousel');
+  });
+});
+      
 
       $('.follow-ups').owlCarousel({
         loop: true,
@@ -116,11 +123,7 @@ $(document).ready(function () {
             }
         })
 
-    
-        
-
     }
-     });  
 
 
      document.addEventListener("DOMContentLoaded", () => {

@@ -333,30 +333,6 @@ body {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1; }
 
-h1 {
-  font-size: 3.125rem;
-  font-weight: 700; }
-
-h2 {
-  font-size: 2.625rem;
-  font-weight: 700; }
-
-h3 {
-  font-size: 1.975rem;
-  font-weight: 700; }
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 700; }
-
-h5 {
-  font-size: 1.25rem;
-  font-weight: 700; }
-
-h6 {
-  font-size: 1rem;
-  font-weight: 500; }
-
 input:focus,
 button:focus {
   outline: none !important;
@@ -377,59 +353,23 @@ a {
   text-transform: capitalize;
   padding-bottom: 80px; }
 
-.owl-nav {
-  right: 0;
-  position: absolute;
-  top: -95px;
-  font-size: 40px;
-  margin: 0px 60px;
-  display: block; }
-  .owl-nav button {
-    /* height: 48px;
-    width: 40px; */ }
-    .owl-nav button i {
-      font-size: 30px;
-      color: #ffffff;
-      background-color: #0c254e;
-      border-radius: 100%;
-      margin: 0 5px; }
-      .owl-nav button i:hover {
-        background-color: #ffffff;
-        color: #0c254e; }
+.custom-nav {
+  position: relative;
+  margin-top: 10px; }
 
-.owl-item.active .slider-item .container .slider-content h2 {
-  animation: fadeInUp 1300ms; }
-.owl-item.active .slider-item .container .slider-content .action-wrapper {
-  animation: fadeInUp 1500ms; }
+.custom-prev, .custom-next {
+  background-color: transparent;
+  border: 1px solid #d4b179;
+  border-radius: 50%;
+  color: #d4b179;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s; }
 
-.owl-nav {
-  display: none; }
-
-.owl-dots {
-  background-color: #e7e7e7;
-  position: absolute;
-  bottom: -17px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1440px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: flex-end; }
-  .owl-dots .owl-dot {
-    background-color: #164a9e;
-    margin-right: 15px;
-    opacity: 0.5;
-    border: solid 2px #0c254e;
-    width: 100%;
-    height: 10px;
-    margin-right: 37px;
-    border: solid 2px #0c254e; }
-    .owl-dots .owl-dot:last-child {
-      margin-right: 0; }
-    .owl-dots .owl-dot.active {
-      background-color: #0c254e;
-      opacity: 1; }
+.custom-prev:hover, .custom-next:hover {
+  background-color: #d4b179;
+  color: white; }
 
 @media screen and (max-width: 769px) {
   .title-wrapper {
@@ -742,30 +682,6 @@ body {
   font-family: Inter, sans-serif;
   font-feature-settings: "liga" 1, "calt" 1; }
 
-h1 {
-  font-size: 3.125rem;
-  font-weight: 700; }
-
-h2 {
-  font-size: 2.625rem;
-  font-weight: 700; }
-
-h3 {
-  font-size: 1.975rem;
-  font-weight: 700; }
-
-h4 {
-  font-size: 1.5rem;
-  font-weight: 700; }
-
-h5 {
-  font-size: 1.25rem;
-  font-weight: 700; }
-
-h6 {
-  font-size: 1rem;
-  font-weight: 500; }
-
 input:focus,
 button:focus {
   outline: none !important;
@@ -786,59 +702,23 @@ a {
   text-transform: capitalize;
   padding-bottom: 80px; }
 
-.owl-nav {
-  right: 0;
-  position: absolute;
-  top: -95px;
-  font-size: 40px;
-  margin: 0px 60px;
-  display: block; }
-  .owl-nav button {
-    /* height: 48px;
-    width: 40px; */ }
-    .owl-nav button i {
-      font-size: 30px;
-      color: #ffffff;
-      background-color: #0c254e;
-      border-radius: 100%;
-      margin: 0 5px; }
-      .owl-nav button i:hover {
-        background-color: #ffffff;
-        color: #0c254e; }
+.custom-nav {
+  position: relative;
+  margin-top: 10px; }
 
-.owl-item.active .slider-item .container .slider-content h2 {
-  animation: fadeInUp 1300ms; }
-.owl-item.active .slider-item .container .slider-content .action-wrapper {
-  animation: fadeInUp 1500ms; }
+.custom-prev, .custom-next {
+  background-color: transparent;
+  border: 1px solid #d4b179;
+  border-radius: 50%;
+  color: #d4b179;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s; }
 
-.owl-nav {
-  display: none; }
-
-.owl-dots {
-  background-color: #e7e7e7;
-  position: absolute;
-  bottom: -17px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 1440px;
-  margin: 0px auto;
-  display: flex;
-  justify-content: flex-end; }
-  .owl-dots .owl-dot {
-    background-color: #164a9e;
-    margin-right: 15px;
-    opacity: 0.5;
-    border: solid 2px #0c254e;
-    width: 100%;
-    height: 10px;
-    margin-right: 37px;
-    border: solid 2px #0c254e; }
-    .owl-dots .owl-dot:last-child {
-      margin-right: 0; }
-    .owl-dots .owl-dot.active {
-      background-color: #0c254e;
-      opacity: 1; }
+.custom-prev:hover, .custom-next:hover {
+  background-color: #d4b179;
+  color: white; }
 
 @media screen and (max-width: 769px) {
   .title-wrapper {
